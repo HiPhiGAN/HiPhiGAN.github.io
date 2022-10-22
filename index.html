@@ -1,0 +1,260 @@
+<html>
+<head>
+  <meta charvctk_set="UTF-8">
+  <title>"Sound demos for HiPhi-GAN"</title>
+</head>
+<h2>HiPhi-GAN: Improving Neural Vocoder by Fixing the Phase Constant"</h2>
+
+<body>
+
+abstract
+
+<h3> </h3>
+
+
+<h2 id="contents">Contents</h2>
+<ul>
+  <li><h4><b><a href="#ood_music">Synthesized from MUSDB18HQ mixture (out-of-disribution)</a></b><br></h4></li>
+  <li><h4><b><a href="#lt_clean">Synthesized from LibriTTS test-clean (unseen speakers)</a></b><br></h4></li>
+  <li><h4><b><a href="#lt_other">Synthesized from LibriTTS test-other (unseen speakers)</a></b><br></h4></li>
+</ul>
+<br><br>
+
+<br>
+<div>
+  <h3 id="ood_music">Synthesized from MUSDB18HQ mixture (out-of-disribution)</h3>
+
+  <table>
+    <thead>
+    <tr>
+      <th>Types</th>
+      <th>Ground-Truth</th>
+      <th>Diffwave</th>
+      <th>HiFi-GAN (V1)</th>
+      <th>HiPhi-GAN</th>
+    </tr>
+    </thead>
+
+    <tbody>
+    <tr>
+      <th>Bobby Nobody - Stitch Up</th>
+      <td><audio controls style="width: 225px; height: 50px"><source src="samples/MUSDB18HQ/ground-truth/Bobby_Nobody_-_Stitch_Up.wav" type="audio/wav"></audio></td>
+      <td><audio controls style="width: 225px; height: 50px"><source src="samples/MUSDB18HQ/diffwave/Bobby_Nobody_-_Stitch_Up.wav" type="audio/wav"></audio></td>
+      <td><audio controls style="width: 225px; height: 50px"><source src="samples/MUSDB18HQ/HiFiGAN/Bobby_Nobody_-_Stitch_Up.wav" type="audio/wav"></audio></td>
+      <td><audio controls style="width: 225px; height: 50px"><source src="samples/MUSDB18HQ/HiPhiGAN/Bobby_Nobody_-_Stitch_Up.wav" type="audio/wav"></audio></td>
+    </tr>
+    </tbody>
+
+    <tbody>
+    <tr>
+      <th>Carlos Gonzalez - A Place For Us</th>
+      <td><audio controls style="width: 225px; height: 50px"><source src="samples/MUSDB18HQ/ground-truth/Carlos_Gonzalez_-_A_Place_For_Us.wav" type="audio/wav"></audio></td>
+      <td><audio controls style="width: 225px; height: 50px"><source src="samples/MUSDB18HQ/diffwave/Carlos_Gonzalez_-_A_Place_For_Us.wav" type="audio/wav"></audio></td>
+      <td><audio controls style="width: 225px; height: 50px"><source src="samples/MUSDB18HQ/HiFiGAN/Carlos_Gonzalez_-_A_Place_For_Us.wav" type="audio/wav"></audio></td>
+      <td><audio controls style="width: 225px; height: 50px"><source src="samples/MUSDB18HQ/HiPhiGAN/Carlos_Gonzalez_-_A_Place_For_Us.wav" type="audio/wav"></audio></td>
+    </tr>
+    </tbody>
+
+    <tbody>
+    <tr>
+      <th>Louis Cressy Band - Good Time</th>
+      <td><audio controls style="width: 225px; height: 50px"><source src="samples/MUSDB18HQ/ground-truth/Louis_Cressy_Band_-_Good_Time.wav" type="audio/wav"></audio></td>
+      <td><audio controls style="width: 225px; height: 50px"><source src="samples/MUSDB18HQ/diffwave/Louis_Cressy_Band_-_Good_Time.wav" type="audio/wav"></audio></td>
+      <td><audio controls style="width: 225px; height: 50px"><source src="samples/MUSDB18HQ/HiFiGAN/Louis_Cressy_Band_-_Good_Time.wav" type="audio/wav"></audio></td>
+      <td><audio controls style="width: 225px; height: 50px"><source src="samples/MUSDB18HQ/HiPhiGAN/Louis_Cressy_Band_-_Good_Time.wav" type="audio/wav"></audio></td>
+    </tr>
+    </tbody>
+
+    <tbody>
+    <tr>
+      <th>Tom McKenzie - Directions</th>
+      <td><audio controls style="width: 225px; height: 50px"><source src="samples/MUSDB18HQ/ground-truth/Tom_McKenzie_-_Directions.wav" type="audio/wav"></audio></td>
+      <td><audio controls style="width: 225px; height: 50px"><source src="samples/MUSDB18HQ/diffwave/Tom_McKenzie_-_Directions.wav" type="audio/wav"></audio></td>
+      <td><audio controls style="width: 225px; height: 50px"><source src="samples/MUSDB18HQ/HiFiGAN/Tom_McKenzie_-_Directions.wav" type="audio/wav"></audio></td>
+      <td><audio controls style="width: 225px; height: 50px"><source src="samples/MUSDB18HQ/HiPhiGAN/Tom_McKenzie_-_Directions.wav" type="audio/wav"></audio></td>
+    </tr>
+    </tbody>
+
+  </table><br>
+</div>
+
+<br>
+<div>
+  <h3 id="lt_clean">Synthesized from LibriTTS test-clean (unseen speakers)</h3>
+
+  <table>
+    <thead>
+    <tr>
+      <th>Ground-Truth</th>
+      <th>Diffwave</th>
+      <th>HiFi-GAN (V1)</th>
+      <th>HiPhi-GAN</th>
+    </tr>
+    </thead>
+
+    <tbody>
+    <tr>
+      <td><audio controls style="width: 225px; height: 50px"><source src="samples/test-clean/ground-truth/121_123859_000017_000001.wav" type="audio/wav"></audio></td>
+      <td><audio controls style="width: 225px; height: 50px"><source src="samples/test-clean/diffwave/121_123859_000017_000001.wav" type="audio/wav"></audio></td>
+      <td><audio controls style="width: 225px; height: 50px"><source src="samples/test-clean/HiFiGAN/121_123859_000017_000001.wav" type="audio/wav"></audio></td>
+      <td><audio controls style="width: 225px; height: 50px"><source src="samples/test-clean/HiPhiGAN/121_123859_000017_000001.wav" type="audio/wav"></audio></td>
+    </tr>
+    </tbody>
+
+    <tbody>
+    <tr>
+      <td><audio controls style="width: 225px; height: 50px"><source src="samples/test-clean/ground-truth/260_123288_000044_000000.wav" type="audio/wav"></audio></td>
+      <td><audio controls style="width: 225px; height: 50px"><source src="samples/test-clean/diffwave/260_123288_000044_000000.wav" type="audio/wav"></audio></td>
+      <td><audio controls style="width: 225px; height: 50px"><source src="samples/test-clean/HiFiGAN/260_123288_000044_000000.wav" type="audio/wav"></audio></td>
+      <td><audio controls style="width: 225px; height: 50px"><source src="samples/test-clean/HiPhiGAN/260_123288_000044_000000.wav" type="audio/wav"></audio></td>
+    </tr>
+    </tbody>
+
+    <tbody>
+    <tr>
+      <td><audio controls style="width: 225px; height: 50px"><source src="samples/test-clean/ground-truth/1284_1181_000038_000000.wav" type="audio/wav"></audio></td>
+      <td><audio controls style="width: 225px; height: 50px"><source src="samples/test-clean/diffwave/1284_1181_000038_000000.wav" type="audio/wav"></audio></td>
+      <td><audio controls style="width: 225px; height: 50px"><source src="samples/test-clean/HiFiGAN/1284_1181_000038_000000.wav" type="audio/wav"></audio></td>
+      <td><audio controls style="width: 225px; height: 50px"><source src="samples/test-clean/HiPhiGAN/1284_1181_000038_000000.wav" type="audio/wav"></audio></td>
+    </tr>
+    </tbody>
+
+    <tbody>
+    <tr>
+      <td><audio controls style="width: 225px; height: 50px"><source src="samples/test-clean/ground-truth/1320_122612_000013_000000.wav" type="audio/wav"></audio></td>
+      <td><audio controls style="width: 225px; height: 50px"><source src="samples/test-clean/diffwave/1320_122612_000013_000000.wav" type="audio/wav"></audio></td>
+      <td><audio controls style="width: 225px; height: 50px"><source src="samples/test-clean/HiFiGAN/1320_122612_000013_000000.wav" type="audio/wav"></audio></td>
+      <td><audio controls style="width: 225px; height: 50px"><source src="samples/test-clean/HiPhiGAN/1320_122612_000013_000000.wav" type="audio/wav"></audio></td>
+    </tr>
+    </tbody>
+
+    <tbody>
+    <tr>
+      <td><audio controls style="width: 225px; height: 50px"><source src="samples/test-clean/ground-truth/1995_1826_000008_000000.wav" type="audio/wav"></audio></td>
+      <td><audio controls style="width: 225px; height: 50px"><source src="samples/test-clean/diffwave/1995_1826_000008_000000.wav" type="audio/wav"></audio></td>
+      <td><audio controls style="width: 225px; height: 50px"><source src="samples/test-clean/HiFiGAN/1995_1826_000008_000000.wav" type="audio/wav"></audio></td>
+      <td><audio controls style="width: 225px; height: 50px"><source src="samples/test-clean/HiPhiGAN/1995_1826_000008_000000.wav" type="audio/wav"></audio></td>
+    </tr>
+    </tbody>
+
+    <tbody>
+    <tr>
+      <td><audio controls style="width: 225px; height: 50px"><source src="samples/test-clean/ground-truth/4446_2273_000025_000000.wav" type="audio/wav"></audio></td>
+      <td><audio controls style="width: 225px; height: 50px"><source src="samples/test-clean/diffwave/4446_2273_000025_000000.wav" type="audio/wav"></audio></td>
+      <td><audio controls style="width: 225px; height: 50px"><source src="samples/test-clean/HiFiGAN/4446_2273_000025_000000.wav" type="audio/wav"></audio></td>
+      <td><audio controls style="width: 225px; height: 50px"><source src="samples/test-clean/HiPhiGAN/4446_2273_000025_000000.wav" type="audio/wav"></audio></td>
+    </tr>
+    </tbody>
+
+    <tbody>
+    <tr>
+      <td><audio controls style="width: 225px; height: 50px"><source src="samples/test-clean/ground-truth/7729_102255_000003_000006.wav" type="audio/wav"></audio></td>
+      <td><audio controls style="width: 225px; height: 50px"><source src="samples/test-clean/diffwave/7729_102255_000003_000006.wav" type="audio/wav"></audio></td>
+      <td><audio controls style="width: 225px; height: 50px"><source src="samples/test-clean/HiFiGAN/7729_102255_000003_000006.wav" type="audio/wav"></audio></td>
+      <td><audio controls style="width: 225px; height: 50px"><source src="samples/test-clean/HiPhiGAN/7729_102255_000003_000006.wav" type="audio/wav"></audio></td>
+    </tr>
+    </tbody>
+
+    <tbody>
+    <tr>
+      <td><audio controls style="width: 225px; height: 50px"><source src="samples/test-clean/ground-truth/8555_284449_000043_000000.wav" type="audio/wav"></audio></td>
+      <td><audio controls style="width: 225px; height: 50px"><source src="samples/test-clean/diffwave/8555_284449_000043_000000.wav" type="audio/wav"></audio></td>
+      <td><audio controls style="width: 225px; height: 50px"><source src="samples/test-clean/HiFiGAN/8555_284449_000043_000000.wav" type="audio/wav"></audio></td>
+      <td><audio controls style="width: 225px; height: 50px"><source src="samples/test-clean/HiPhiGAN/8555_284449_000043_000000.wav" type="audio/wav"></audio></td>
+    </tr>
+    </tbody>
+
+  </table><br>
+</div>
+
+<br>
+<div>
+  <h3 id="lt_other">Synthesized from LibriTTS test-other (unseen speakers)</h3>
+
+  <table>
+    <thead>
+    <tr>
+      <th>Ground-Truth</th>
+      <th>Diffwave</th>
+      <th>HiFi-GAN (V1)</th>
+      <th>HiPhi-GAN</th>
+    </tr>
+    </thead>
+
+    <tbody>
+    <tr>
+      <td><audio controls style="width: 225px; height: 50px"><source src="samples/test-other/ground-truth/3005_163399_000045_000002.wav" type="audio/wav"></audio></td>
+      <td><audio controls style="width: 225px; height: 50px"><source src="samples/test-other/diffwave/3005_163399_000045_000002.wav" type="audio/wav"></audio></td>
+      <td><audio controls style="width: 225px; height: 50px"><source src="samples/test-other/HiFiGAN/3005_163399_000045_000002.wav" type="audio/wav"></audio></td>
+      <td><audio controls style="width: 225px; height: 50px"><source src="samples/test-other/HiPhiGAN/3005_163399_000045_000002.wav" type="audio/wav"></audio></td>
+    </tr>
+    </tbody>
+
+    <tbody>
+    <tr>
+      <td><audio controls style="width: 225px; height: 50px"><source src="samples/test-other/ground-truth/3080_5032_000010_000005.wav" type="audio/wav"></audio></td>
+      <td><audio controls style="width: 225px; height: 50px"><source src="samples/test-other/diffwave/3080_5032_000010_000005.wav" type="audio/wav"></audio></td>
+      <td><audio controls style="width: 225px; height: 50px"><source src="samples/test-other/HiFiGAN/3080_5032_000010_000005.wav" type="audio/wav"></audio></td>
+      <td><audio controls style="width: 225px; height: 50px"><source src="samples/test-other/HiPhiGAN/3080_5032_000010_000005.wav" type="audio/wav"></audio></td>
+    </tr>
+    </tbody>
+
+    <tbody>
+    <tr>
+      <td><audio controls style="width: 225px; height: 50px"><source src="samples/test-other/ground-truth/4294_9934_000028_000000.wav" type="audio/wav"></audio></td>
+      <td><audio controls style="width: 225px; height: 50px"><source src="samples/test-other/diffwave/4294_9934_000028_000000.wav" type="audio/wav"></audio></td>
+      <td><audio controls style="width: 225px; height: 50px"><source src="samples/test-other/HiFiGAN/4294_9934_000028_000000.wav" type="audio/wav"></audio></td>
+      <td><audio controls style="width: 225px; height: 50px"><source src="samples/test-other/HiPhiGAN/4294_9934_000028_000000.wav" type="audio/wav"></audio></td>
+    </tr>
+    </tbody>
+
+    <tbody>
+    <tr>
+      <td><audio controls style="width: 225px; height: 50px"><source src="samples/test-other/ground-truth/5764_299665_000053_000004.wav" type="audio/wav"></audio></td>
+      <td><audio controls style="width: 225px; height: 50px"><source src="samples/test-other/diffwave/5764_299665_000053_000004.wav" type="audio/wav"></audio></td>
+      <td><audio controls style="width: 225px; height: 50px"><source src="samples/test-other/HiFiGAN/5764_299665_000053_000004.wav" type="audio/wav"></audio></td>
+      <td><audio controls style="width: 225px; height: 50px"><source src="samples/test-other/HiPhiGAN/5764_299665_000053_000004.wav" type="audio/wav"></audio></td>
+    </tr>
+    </tbody>
+
+    <tbody>
+    <tr>
+      <td><audio controls style="width: 225px; height: 50px"><source src="samples/test-other/ground-truth/6432_63722_000018_000001.wav" type="audio/wav"></audio></td>
+      <td><audio controls style="width: 225px; height: 50px"><source src="samples/test-other/diffwave/6432_63722_000018_000001.wav" type="audio/wav"></audio></td>
+      <td><audio controls style="width: 225px; height: 50px"><source src="samples/test-other/HiFiGAN/6432_63722_000018_000001.wav" type="audio/wav"></audio></td>
+      <td><audio controls style="width: 225px; height: 50px"><source src="samples/test-other/HiPhiGAN/6432_63722_000018_000001.wav" type="audio/wav"></audio></td>
+    </tr>
+    </tbody>
+
+    <tbody>
+    <tr>
+      <td><audio controls style="width: 225px; height: 50px"><source src="samples/test-other/ground-truth/7018_75789_000001_000003.wav" type="audio/wav"></audio></td>
+      <td><audio controls style="width: 225px; height: 50px"><source src="samples/test-other/diffwave/7018_75789_000001_000003.wav" type="audio/wav"></audio></td>
+      <td><audio controls style="width: 225px; height: 50px"><source src="samples/test-other/HiFiGAN/7018_75789_000001_000003.wav" type="audio/wav"></audio></td>
+      <td><audio controls style="width: 225px; height: 50px"><source src="samples/test-other/HiPhiGAN/7018_75789_000001_000003.wav" type="audio/wav"></audio></td>
+    </tr>
+    </tbody>
+
+    <tbody>
+    <tr>
+      <td><audio controls style="width: 225px; height: 50px"><source src="samples/test-other/ground-truth/7105_2340_000044_000003.wav" type="audio/wav"></audio></td>
+      <td><audio controls style="width: 225px; height: 50px"><source src="samples/test-other/diffwave/7105_2340_000044_000003.wav" type="audio/wav"></audio></td>
+      <td><audio controls style="width: 225px; height: 50px"><source src="samples/test-other/HiFiGAN/7105_2340_000044_000003.wav" type="audio/wav"></audio></td>
+      <td><audio controls style="width: 225px; height: 50px"><source src="samples/test-other/HiPhiGAN/7105_2340_000044_000003.wav" type="audio/wav"></audio></td>
+    </tr>
+    </tbody>
+
+    <tbody>
+    <tr>
+      <td><audio controls style="width: 225px; height: 50px"><source src="samples/test-other/ground-truth/8131_117016_000018_000001.wav" type="audio/wav"></audio></td>
+      <td><audio controls style="width: 225px; height: 50px"><source src="samples/test-other/diffwave/8131_117016_000018_000001.wav" type="audio/wav"></audio></td>
+      <td><audio controls style="width: 225px; height: 50px"><source src="samples/test-other/HiFiGAN/8131_117016_000018_000001.wav" type="audio/wav"></audio></td>
+      <td><audio controls style="width: 225px; height: 50px"><source src="samples/test-other/HiPhiGAN/8131_117016_000018_000001.wav" type="audio/wav"></audio></td>
+    </tr>
+    </tbody>
+
+  </table><br>
+</div>
+
+</body>
+</html>
